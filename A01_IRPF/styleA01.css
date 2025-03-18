@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.headerIndex {
+    background-color: #191e7b;
+    height: fit-content;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.headerText {
+    font-size: 20px;
+    color: rgb(196, 205, 227);
+}
+
+.container {
+    width: 720px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background: #ddd6f2;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px auto; 
+}
+
+.inputSalario {
+    width: 600px;
+    padding: 17px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-bottom: 15px; 
+}
+
+.inputSalario:focus {
+    border-color: #352afe;
+}
+
+.buttonCalc {
+    width: 150px;
+    padding: 17px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.buttonReset {
+    width: 120px;
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.buttonCalc {
+    background: #191e7b;
+}
+
+.buttonCalc:hover {
+    background: #352afe;
+}
+
+.buttonReset {
+    background: #dc3591;
+}
+
+.buttonReset:hover {
+    background: #352afe;
+}
