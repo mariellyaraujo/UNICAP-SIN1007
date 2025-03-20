@@ -4,20 +4,27 @@
             <title>A01 Cálculo IRPF</title>
             <link rel="stylesheet" type="text/css" href="styleA01.css" media="screen" />
             <script src="scriptA01.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+            
         </head>
 
         <body>
             <div class="headerIndex">
-                <div class="headerText">
+                <div class="headerText lato-regular">
                     <h1>Cálculo de Imposto de Renda</h1>
                 </div>
             </div>
 
             <div class="container">
-                <input class="inputSalario" placeholder="Digite seu salário">
+                <p class="lato-regular">Digite seu salário do mês de Janeiro</p>
+                <input class="inputSalario" placeholder="Digite seu salário" type="number">
 
-                <button class="buttonCalc">Calcular</button>
-                <button class="buttonReset">Resetar</button>
-            </div>
+                <button class="buttonCalc lato-regular">Calcular</button>
+                <button class="buttonReset lato-regular">Resetar</button>
+                <p class="irpfShow lato-regular">Valor do IRPF a recolher:</p>
+                <p class="aliquota lato-regular">Alíquota efetiva: </p>
+
         </body>
     </html>
