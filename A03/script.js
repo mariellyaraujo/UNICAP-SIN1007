@@ -27,3 +27,24 @@ function exibirDados() {
     <p><strong>Telefone:</strong> ${telefone}</p>
     `;
 }
+
+function enviarZap() {
+    const nome = localStorage.getItem("nomeForms") || "";
+    const endereco = localStorage.getItem("enderecoForms") || "";
+    const email = localStorage.getItem("emailForms") || "";
+    const telefone = localStorage.getItem("telefoneForms") || "";
+
+    const numeroDestino = document.getElementById('numeroZap').value;
+
+    if (numeroDestino.trim() == ""){
+        alert("Digite um número do zap ai pra enviar uma mensagem");
+        return;
+    }
+
+    const mensagem = `Nome: ${nome}%0AEndereço: ${endereco}%0AEmail: ${email}%0ATelefone: ${telefone}`;
+
+    const linkWhatsapp = `https://api.whatsapp.com/send?phone=${numeroDestino}&text=${mensagem}`;
+    
+    window.open(linkWhatsapp, "_blank");
+
+}
