@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
-
+        <meta charset="UTF-8">
+        <title>Forms A03</title>
     </head>
     <body>
-        
+        <h1>Forms A03!</h1>
+
+        <form id="formulario">
+            <label>Nome:</label>
+            <input type="text" id="nomeForm"><br><br>
+
+            <label>Endereço:</label>
+            <input type="text" id="enderecoForms"><br><br>
+
+            <label>E-mail:</label>
+            <input type="email" id="emailForms"><br><br>
+
+            <label>Telefone:</label>
+            <input type="text" id="telefoneForms"><br><br>
+
+            <button type="button" onclick="armazenarDados()">Registrar</button>
+            <button type="button" onclick="exibirDados()">Exibir</button>
+        </form>
+
+        <div id="resultado" style="margin-top: 20px;"></div>
+
+        <script src="script.js"></script>
     </body>
 </html>
