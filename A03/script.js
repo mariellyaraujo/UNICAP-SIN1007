@@ -11,3 +11,19 @@ function armazenarDados(){
 
     alert("Dados registrados com sucesso!");
 }
+
+function exibirDados() {
+    const nome = localStorage.getItem("nomeForms") || "(vazio)";
+    const endereco = localStorage.getItem("enderecoForms") || "(vazio)";
+    const email = localStorage.getItem("emailForms") || "(vazio)";
+    const telefone = localStorage.getItem("telefoneForms") || "(vazio)";
+
+    const resultado = document.getElementById("resultado");
+
+    resultado.innerHTML = `
+    <p><strong>Nome:</strong> ${nome}</p>
+    <p><strong>Endereço:</strong> ${endereco}</p>
+    <p><strong>E-mail:</strong> ${email}</p>
+    <p><strong>Telefone:</strong> ${telefone}</p>
+    `;
+}
